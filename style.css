@@ -1,0 +1,199 @@
+html{
+    box-sizing: border-box;
+
+}
+
+* ,*:before ,*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: #59A5D8;
+}
+
+.main {
+    background: #ffffff;
+    width: 70%;
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 5px;  
+}
+
+.footer {
+    width: 70%;
+    min-width: 500px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 1vh;
+    border-radius: 5px;   
+}
+
+.footer-header {
+    padding: 5px;
+    margin: 5px;
+}
+
+.main-header{
+    display: block;
+    height: fit-content;
+}
+.main-heading{
+    color: #211A1E;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+
+}
+
+.calednar__week{
+    min-height: 30pxpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.calendar__column-header{
+    border: 0px;
+    padding-top: 8px;
+    text-align: center;
+    height: 30px;
+    width: 60px;
+    background-color: #ffffff;
+    color: #172A3A;
+    font-weight: bold;
+    font-size: 12px;
+    
+    order: 1;
+}
+.calendar__row-header-smaller{
+    border: 0px;
+    padding-top: 8px;
+    text-align: center;
+    height: 30px;
+    width: 60px;
+    background-color: #ffffff;
+    color: #172A3A;
+    font-weight: bold;
+    font-size: 12px;
+    
+    order: 1;
+}
+
+.calendar__row-header{
+    border: 0px;
+    padding-top: 16px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    color: lightslategray;
+    font-weight: bold;
+    font-size: 20px;
+    flex-grow: 1;
+    order: 1;
+}
+.calendar__row-day{
+    border: 1px solid rgb(189, 189, 190);
+    border-radius: 2px;
+    margin: 1px;
+    padding-top: 16px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    background-color: rgb(203, 204, 201);
+    color: #211A1E;
+    font-weight: bold;
+    font-size: 20px;
+    
+    flex-grow: 1;
+    order: 1;
+}
+
+.calendar__row-day__holiday{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    margin: 1px;
+    padding-top: 16px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    background-color: rgb(203, 204, 201);
+    color: #C3423F;
+    font-weight: bold;
+    font-size: 20px;
+    
+    flex-grow: 1;
+    order: 1;
+}
+
+
+
+.calendar__row-day__work{
+    border: 1px solid rgb(189, 189, 190);
+    border-radius: 2px;
+    margin: 1px;
+    padding-top: 16px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    background-color: #9BC53D;
+    color: #211A1E;
+    font-weight: bold;
+    font-size: 20px;
+    
+    flex-grow: 1;
+    order: 1;
+}
+
+.calendar__row-day__done{
+    border: 1px solid rgb(189, 189, 190);
+    border-radius: 2px;
+    margin: 1px;
+    padding-top: 16px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    background-color: #508991;
+    color: #211A1E;
+    font-weight: bold;
+    font-size: 20px;
+    
+    flex-grow: 1;
+    order: 1;
+}
+
+.calendar__row-day__vacation{
+    border: 1px solid rgb(189, 189, 190);
+    border-radius: 2px;
+    margin: 1px;
+    padding-top: 16px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    background-image: url(resources/holiday.jpg);
+    background-size: contain;
+    color: #211A1E;
+    font-weight: bold;
+    font-size: 20px;
+    
+    flex-grow: 1;
+    order: 1;
+}
+
+.calendar__row-day-info{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+
