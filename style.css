@@ -38,7 +38,17 @@ body{
 .main-header{
     display: block;
     height: fit-content;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
+
+.main-header__p{
+    width: fit-content;
+    margin: auto;
+
+
+}
+
 .main-heading{
     color: #211A1E;
     width: fit-content;
@@ -197,3 +207,23 @@ body{
 }
 
 
+.form_item{
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+    color: maroon;
+}
+
+.form_label{
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.calendar__section-visible{
+    visibility: visible;
+}
+.calendar__section-hide{
+    display: none;
+}

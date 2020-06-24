@@ -10,9 +10,95 @@
   <body>
     <main class="main">
       <header class="main-header">
-        <h1 class="main-heading">Czerwiec 2020</h1>
+        <p class="main-header__p">
+          <label class="form_label" for="month">Miesiąc:</label>
+          <select class="form_item form__month--js" name="month" id="month">
+              <option value="62020">Czerwiec 2020</option>
+              <option value="72020">Lipiec 2020</option>
+          </select>
+        </p>
       </header>
-      <section>
+      <section class="calendar__section-visible calendar__month--js 72020">
+        <div class="calendar">
+          <div class="calednar__week">
+            <div class="calendar__row-header-smaller">Tydzień</div>
+            <div class="calendar__column-header">Poniedziałek</div>
+            <div class="calendar__column-header">Wtorek</div>
+            <div class="calendar__column-header">Środa</div>
+            <div class="calendar__column-header">Czwartek</div>
+            <div class="calendar__column-header">Piątek</div>
+            <div class="calendar__column-header">Sobota</div>
+            <div class="calendar__column-header">Niedziela</div>
+          </div>
+          <div class="calednar__week">
+            <div class="calendar__row-header">27</div>
+            <div class="calendar__row-day"></div>
+            <div class="calendar__row-day"></div>
+            <div class="calendar__row-day__work">1</div>
+            <div class="calendar__row-day">2</div>
+            <div class="calendar__row-day__work">3</div>
+            <div class="calendar__row-day__holiday">4</div>
+            <div class="calendar__row-day__holiday">5</div>
+          </div>
+          <div class="calednar__week">
+            <div class="calendar__row-header">28</div>
+            <div class="calendar__row-day__work">
+              6
+              <p class="calendar__row-day-info">4h</p>
+            </div>
+            <div class="calendar__row-day">
+              7
+            </div>
+            <div class="calendar__row-day__work">8</div>
+            <div class="calendar__row-day">9</div>
+            <div class="calendar__row-day__work">10</div>
+            <div class="calendar__row-day__holiday">11</div>
+            <div class="calendar__row-day__holiday">12</div>
+          </div>
+          <div class="calednar__week">
+            <div class="calendar__row-header">29</div>
+            <div class="calendar__row-day__work">
+              13
+              <p class="calendar__row-day-info">4h</p>
+            </div>
+            <div class="calendar__row-day">14</div>
+            <div class="calendar__row-day__work">15</div>
+            <div class="calendar__row-day">16</div>
+            <div class="calendar__row-day__work">17</div>
+            <div class="calendar__row-day__holiday">18</div>
+            <div class="calendar__row-day__holiday">19</div>
+          </div>
+          <div class="calednar__week">
+            <div class="calendar__row-header">30</div>
+
+            <div class="calendar__row-day__work">
+              20
+              <p class="calendar__row-day-info">4h</p>
+            </div>
+            <div class="calendar__row-day">21</div>
+            <div class="calendar__row-day__work">22</div>
+            <div class="calendar__row-day">23</div>
+            <div class="calendar__row-day__work">24</div>
+            <div class="calendar__row-day__holiday">25</div>
+            <div class="calendar__row-day__holiday">26</div>
+          </div>
+          <div class="calednar__week">
+            <div class="calendar__row-header">31</div>
+            <div class="calendar__row-day__work">
+              27
+              <p class="calendar__row-day-info">4h</p>
+            </div>
+            <div class="calendar__row-day">28</div>
+            <div class="calendar__row-day__work">29</div>
+            <div class="calendar__row-day">30</div>
+            <div class="calendar__row-day__work">31</div>
+            <div class="calendar__row-day__holiday"></div>
+            <div class="calendar__row-day__holiday"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendar__section-hide calendar__month--js 62020">
         <div class="calendar">
           <div class="calednar__week">
             <div class="calendar__row-header-smaller">Tydzień</div>
@@ -92,6 +178,8 @@
           </div>
         </div>
       </section>
+
+
     </main>
     <footer class="footer">
       <h5 class="footer-header">Legenda:</h5>
@@ -110,5 +198,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
